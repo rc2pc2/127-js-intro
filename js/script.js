@@ -25,18 +25,28 @@
 // const userNumber = prompt('Type a number');
 
 
-// !  Anni: chiediamo all'utente la sua età e comunichiamo l'anno di nascita.
+// // !  Anni: chiediamo all'utente la sua età e comunichiamo l'anno di nascita.
 
-//  * chiedo all'utente la sua eta'
-//  * salvo l'eta' dell'utente appena inserita
-    let userAge = prompt('Scrivi la tua eta');
-    userAge = parseInt(userAge);
+// //  * chiedo all'utente la sua eta'
+// //  * salvo l'eta' dell'utente appena inserita
+//     let userAge = prompt('Scrivi la tua eta');
+//     userAge = parseInt(userAge);
 
-    //  * calcolo l'anno di nascita:
-    // * assegno ad una nuova variabile annoDiNascita = annoAttuale - eta' utente
-    const ageOfBirth = 2024 + userAge;
+//     //  * calcolo l'anno di nascita:
+//     // * assegno ad una nuova variabile annoDiNascita = annoAttuale - eta' utente
+//     const ageOfBirth = 2024 + userAge;
 
-    // * scrivo in console il risultato
-    console.log(ageOfBirth);
+//     // * scrivo in console il risultato
+//     console.log(ageOfBirth);
 
+// ? Salutare: chiediamo all'utente il suo nome e inseriamo in console la stringa "ciao <nome_utente>"
+const userName = prompt('Type your name');
 
+console.log('Ciao ' + userName);
+console.log("Ciao " + userName);
+console.log(`Ciao ${userName}`);
+// document.writeln(userName);
+
+// ? prendo il primo elemento con id 'output' nella pagina
+// ? e al suo interno sovrascrivo tutto quello che c'e' con userName
+document.getElementById('output').innerHTML = 'Ciao' + userName;
